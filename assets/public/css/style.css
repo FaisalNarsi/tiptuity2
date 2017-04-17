@@ -10,11 +10,18 @@ html {
   height: 100%;
 }
 
+ .welcome {
+   background-color: green;
+
+
+ }
+
 body {
   background: #F6F9FC;
   display: flex;
   align-items: center;
   min-height: 100%;
+
 }
 
 form {
@@ -60,6 +67,7 @@ label > span {
 .field.StripeElement--focus {
   border-color: #F99A52;
 }
+
 
 button {
   float: left;
@@ -114,4 +122,20 @@ button:active {
 .success .token {
   font-weight: 500;
   font-size: 13px;
+}
+
+.credit {
+  height: 100px;
+  width: 100px;
+  float: right;
+  color: black;
+  background-color: lightblue;
+}
+.login {
+  height: 50px;
+  width: 40px;
+  float: left;
+  color: yellow;
+  background-color: black;
+
 }
