@@ -10,7 +10,7 @@ var app = express();
 app.set('views', path.join(__dirname, 'views'));
 app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
-app.use(express.static("app/public"));
+app.use(express.static("../public"));
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -19,7 +19,7 @@ app.use(bodyParser.json({ type: "application/vnd.api+json" }));
 
 
 app.get('/', function(req, res){
-  res.render('index');
+  res.render("index");
 });
 
 app.listen(PORT);
